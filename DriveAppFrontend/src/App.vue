@@ -1,19 +1,22 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import Header from './components/Header.vue';
+import Footer from './components/Footer.vue'
 import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
- 
-
-  <RouterView />
- 
+  <div>
+    <Header />
+    <RouterView />
+    <Footer />
+  </div>
 </template>
 
 <style>
- /*  body{
-    background-color: blue;
-  } */
+ body{
+  margin: 0;
+ }
  
 
 

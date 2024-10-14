@@ -14,6 +14,7 @@
         
 
         <div class="container">
+            
             <div class="text-container">
                 <RouterLink to="/login" class="text">
                     <div>
@@ -23,8 +24,8 @@
                 </RouterLink>
             </div>
 
-<div class="text-container">
-    <RouterLink to="/login" class="text">
+            <div class="text-container">
+                <RouterLink to="/login" class="text">
                     <div>
                         <h2>Für Auftragnehmer</h2>
                         <p>Suchen Sie nach einer zuverlässigen Lösung für Ihre Lieferbedürfnisse? Bei DriveApp können Sie einfach und schnell einen Transportauftrag erteilen. Egal, ob es sich um ein kleines Paket oder eine größere Lieferung handelt, wir haben die passende Lösung für Sie. Klicken Sie auf den untenstehenden Button, um zu Ihrer persönlichen Kunden-Seite zu gelangen und starten Sie noch heute Ihre Reise mit uns!</p>
@@ -54,5 +55,6 @@
     .text{
         color: black;
         text-decoration: none;
+        
     }
 </style>

@@ -5,11 +5,11 @@ import StartView from '../views/StartView.vue'
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    /* {
+    {
       path: '/',
       name: 'home',
-      component: HomeView
-    }, */
+      component: StartView
+    },
     {
       path: '/login',
       name: 'login',
