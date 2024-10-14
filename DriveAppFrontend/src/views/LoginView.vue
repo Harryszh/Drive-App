@@ -26,20 +26,29 @@ const login = async () => {
   <form action="" method="post" @submit.prevent="login">
     
     <!-- <img src="../assets/" alt="Das Logo" class="logo"> -->
-  <main class="login-main">
-    <div class="login-container">
-      <div class="formgroup">
-        <label for="">E-Mail</label>
-        <input class="placeholder" type="email" name="email" v-model="user.email" />
+  <main>
+      <div>
+        <h1>Willkommen zurück bei DriveApp!</h1>
       </div>
 
-      <div class="formgroup">
-        <label for="">Passwort</label>
-        <input class="placeholder" type="password" name="password" v-model="user.password" />
-      </div>
-    </div>
+    <div class="box"> 
+      <div class="login-container">
+          <div class="formgroup">
+            <label for="">E-Mail</label>
+            <input class="placeholder" type="email" name="email" v-model="user.email" />
+          </div>
+
+        <div class="formgroup">
+          <label for="">Passwort</label>
+          <input class="placeholder" type="password" name="password" v-model="user.password" />
+        </div>
     
-      <button type="submit">Login</button>
+        <div>
+          <button type="submit">Login</button>
+        </div>
+      </div>
+    </div> 
+      
  
   </main>   
 
@@ -47,7 +56,32 @@ const login = async () => {
 </template>
 
 
-  <style scoped>
+<style scoped>
+  
+  h1{
+    display: flex;
+    justify-content: center;
+    color: azure;
+  }
+  .box{
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .login-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 400px;
+  }
+  .formgroup{
+    display: flex;
+    flex-direction: column;
+  }
+
+
 
 </style>
 

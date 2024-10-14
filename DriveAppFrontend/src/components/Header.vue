@@ -7,7 +7,7 @@
 <template>
     <header>
         <nav>
-            Hallo
+            <p>DriveApp</p>
         </nav>
     </header>
 </template>
@@ -16,6 +16,12 @@
    
     header{
         background-color: azure;
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
         
     }
 </style>

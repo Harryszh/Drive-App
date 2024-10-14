@@ -8,7 +8,9 @@ import HelloWorld from './components/HelloWorld.vue'
 <template>
   <div>
     <Header />
-    <RouterView />
+    <main>
+      <RouterView />
+    </main>
     <Footer />
   </div>
 </template>
@@ -16,6 +18,9 @@ import HelloWorld from './components/HelloWorld.vue'
 <style>
  body{
   margin: 0;
+ }
+ main{
+  padding-top: 60px;
  }
  
 
