@@ -5,10 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Order;
 use Illuminate\Http\Request;
 
-class OrderController
+class OrderController /* extends Controller */
 {
-
-
     /**
      * Display a listing of the resource.
      */
@@ -30,7 +28,23 @@ class OrderController
      */
     public function store(Request $request)
     {
-        //
+        // Validierung
+        $validated = $request->validate([
+            'abholort' => 'required|string|max:255',
+            'zielort' => 'required|string|max:255',
+            'fahrzeugtyp' => 'required|string',
+            'ladezeit' => 'required',
+            'zustelloption' => 'required|in:express,termin',
+            'termin_datum' => 'nullable|date',
+        ]);
+
+        // Buchung erstellen
+        $order = Order::create($validated);
+
+        return response()->json([
+            'message' => 'Buchung erfolgreich erstellt!',
+            'order' => $order
+        ]);
     }
 
     /**

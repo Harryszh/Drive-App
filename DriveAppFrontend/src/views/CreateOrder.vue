@@ -1,4 +1,6 @@
 <script>
+import axios from 'axios';
+
 export default {
   data() {
     return {
@@ -9,22 +11,21 @@ export default {
         ladezeit: '',
         zustelloption: 'express',
         terminDatum: ''
-      }
+      },
+      bookingStatus: ''
     };
   },
   methods: {
     submitBooking() {
-      // Hier kannst du Axios verwenden, um die Buchungsdaten an dein Backend zu senden
-      console.log('Buchung gesendet:', this.form);
-
-      // Beispiel: Axios-Anfrage
-      // axios.post('https://api.example.com/buchung', this.form)
-      //   .then(response => {
-      //     console.log('Buchung erfolgreich:', response.data);
-      //   })
-      //   .catch(error => {
-      //     console.error('Fehler bei der Buchung:', error);
-      //   });
+      axios.post('http://localhost:8000/api/buchung', this.form)
+        .then(response => {
+          console.log('Buchung erfolgreich:', response.data);
+          this.bookingStatus = 'Buchung erfolgreich!';
+        })
+        .catch(error => {
+          console.error('Fehler bei der Buchung:', error);
+          this.bookingStatus = 'Fehler bei der Buchung!';
+        });
     }
   }
 };
