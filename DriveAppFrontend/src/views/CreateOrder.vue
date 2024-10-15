@@ -87,6 +87,10 @@ export default {
       <!-- Absenden -->
       <button type="submit">Buchung abschicken</button>
     </form>
+    
+        <div v-if="bookingStatus">
+            <p>{{ bookingStatus }}</p>
+        </div>
 
         </div>
     </main>

@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\category;
+use App\Models\Order;
 use Illuminate\Http\Request;
 
-class CategoryController extends Controller
+class OrderController
 {
+
+
     /**
      * Display a listing of the resource.
      */
@@ -34,7 +36,7 @@ class CategoryController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(category $category)
+    public function show(Order $order)
     {
         //
     }
@@ -42,7 +44,7 @@ class CategoryController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(category $category)
+    public function edit(Order $order)
     {
         //
     }
@@ -50,7 +52,7 @@ class CategoryController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, category $category)
+    public function update(Request $request, Order $order)
     {
         //
     }
@@ -58,7 +60,7 @@ class CategoryController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(category $category)
+    public function destroy(Order $order)
     {
         //
     }
