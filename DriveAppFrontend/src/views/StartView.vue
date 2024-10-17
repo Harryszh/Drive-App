@@ -41,16 +41,32 @@
 <style scoped>
     .titel-container{
         color: azure;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 26px;
+        margin-left: 5%;
+        margin-right: 5%;
+        
+    }
+    .h1{
+        display: flex;
+        justify-content: center;
     }
     .container{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 5%;
+        gap: 5%;
 
     }
     .text-container{
-        width: 400px;
+        width: 600px;
         background-color: gray;
+        font-size: 26px;
     }
     .text{
         color: black;
