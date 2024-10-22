@@ -42,6 +42,9 @@ const login = async () => {
           <label for="">Passwort</label>
           <input class="placeholder" type="password" name="password" v-model="user.password" />
         </div>
+
+        Hast du noch keinen acount?
+          <RouterLink to="/register" v-if="!authUser"><button class="sign-button">Sign Up</button></RouterLink>
     
         <div>
           <button type="submit">Login</button>
