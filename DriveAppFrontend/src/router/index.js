@@ -34,9 +34,14 @@ const router = createRouter({
     {
       path: '/accept',
       name: 'accept',
-      component: () => import('../views/AcceptRideView.vue')
+      component: () => import('../views/AcceptOrderView.vue')
       
-    }
+    },
+    {
+      path: '/complete',
+      name: 'complete',
+      component: () => import('../views/CompleteOrderView.vue')
+    },
       
     ]
 })
