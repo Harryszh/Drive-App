@@ -42,6 +42,11 @@ const router = createRouter({
       name: 'complete',
       component: () => import('../views/CompleteOrderView.vue')
     },
+    {
+      path: '/map',
+      name: 'map',
+      component: () => import('../views/MapView.vue')
+    },
       
     ]
 })
